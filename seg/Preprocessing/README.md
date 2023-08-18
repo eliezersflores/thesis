@@ -1,0 +1,6 @@
+As imagens macroscópicas de lesões melanocíticas, usualmente, possuem iluminação irregular. Consequentemente, a região de pele normal tende a apresentar artefatos indesejáveis tais como áreas sombreadas e reflexos, os quais podem ser confundidos com lesões de pele em etapas subsequentes. Para contornar esse problema, o método de pré-processamento de imagens em "shad_atten.py" pode ser utilizado. O script "script_bench.py" permite aplicar tal método em todas as imagens de uma determinada base. Especificamente, com a opção "verbose = 0", esse script produz uma nova versão de uma base de imagens dada, na qual as imagens originais são substituídas pelas respectivas imagens pré-processadas. A opção "verbose = 1" organiza todos os resultados do pré-processamento (incluindo os resultados intermediários) em um subdiretório desta pasta, de um modo conveniente para a apresentação em papers e na tese. 
+
+Obs. 1: para replicar os resultados da tese do Glaister (páginas 34-37), com a base Dermquest, usar kappa = 20, saturate_opt = 0 e normalize_opt = 1. 
+
+Obs. 2: nunca consegui reproduzir os resultados do pré-processamento realizado pelo professor Pablo Cavalcanti a partir das imagens da base DermNet.
+
